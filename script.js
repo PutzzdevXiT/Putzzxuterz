@@ -1,4 +1,4 @@
-const KEY_URL = "https://raw.githubusercontent.com/PutzzdevXiT/sefelink-by-putzz/main/key1.json";
+const KEY_URL = "https://raw.githubusercontent.com/PutzzdevXiT/sefelink-by-putzz/refs/heads/main/key1.json";
 
 async function checkKey() {
   const input = document.getElementById("keyInput").value.trim();

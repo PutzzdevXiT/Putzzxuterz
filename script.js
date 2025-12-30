@@ -13,7 +13,7 @@ async function checkKey() {
   const used = JSON.parse(localStorage.getItem("USED_KEYS") || "[]");
   if (used.includes(input)) {
     msg.style.color = "red";
-    msg.innerText = "Key sudah digunakan";
+    msg.innerText = "Key sudah kedaluwarsa";
     return;
   }
 
@@ -23,7 +23,7 @@ async function checkKey() {
 
     if (!data.keys.includes(input)) {
       msg.style.color = "red";
-      msg.innerText = "Key tidak ditemukan";
+      msg.innerText = "Key tidak terdaftar/salah";
       return;
     }
 

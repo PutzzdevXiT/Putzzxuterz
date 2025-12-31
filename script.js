@@ -43,7 +43,7 @@ async function checkKey() {
       return;
     }
 
-    msg.innerText = "Key salah minta ke admin😚";
+    msg.innerText = "Key salah minta ke admin";
 
   } catch (err) {
     msg.innerText = "Gagal mengambil data key";

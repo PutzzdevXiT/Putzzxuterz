@@ -31,7 +31,7 @@ async function checkKey() {
     // 🔑 KEY 1x PAKAI
     if (data.once_keys.includes(input)) {
       if (usedOnceKeys.includes(input)) {
-        msg.innerText = "Key ini sudah digunakan";
+        msg.innerText = "Key ini sudah kedaluwarsa 🥺";
         return;
       }
 
@@ -43,7 +43,7 @@ async function checkKey() {
       return;
     }
 
-    msg.innerText = "Key tidak valid";
+    msg.innerText = "Key salah minta ke admin😚";
 
   } catch (err) {
     msg.innerText = "Gagal mengambil data key";

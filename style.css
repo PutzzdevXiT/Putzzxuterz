@@ -1,0 +1,192 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Kanit',sans-serif
+}
+
+body{
+  background:#02040f;
+  color:#dff6ff;
+  min-height:100vh;
+  overflow-x:hidden;
+}
+
+/* ===== GRID BACKGROUND ===== */
+.cyber-grid{
+  position:fixed;
+  inset:0;
+  background:
+    linear-gradient(rgba(0,255,255,.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(180,100,255,.12) 1px, transparent 1px);
+  background-size:60px 60px;
+  z-index:-2;
+}
+
+/* ===== PARTICLES ===== */
+#particles{
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+}
+
+/* ===== CARD ===== */
+.card{
+  max-width:420px;
+  margin:90px auto 40px;
+  padding:28px;
+  border-radius:22px;
+  background:rgba(0,30,60,.45);
+  backdrop-filter:blur(18px);
+  border:1px solid rgba(0,200,255,.35);
+  box-shadow:0 0 30px rgba(0,200,255,.35);
+  position:relative;
+  z-index:2;
+}
+
+.hidden{
+  display:none;
+}
+
+h1{
+  text-align:center;
+  margin-bottom:16px;
+  color:#6dfcff;
+  text-shadow:0 0 18px #00eaff;
+}
+
+.desc{
+  text-align:center;
+  margin-bottom:14px;
+  opacity:.85;
+}
+
+/* ===== INPUT ===== */
+input{
+  width:100%;
+  padding:14px;
+  border-radius:14px;
+  border:1px solid rgba(0,200,255,.4);
+  background:rgba(0,20,40,.7);
+  color:white;
+  outline:none;
+}
+
+/* ===== BUTTON ===== */
+button{
+  width:100%;
+  margin-top:14px;
+  padding:14px;
+  border:none;
+  border-radius:14px;
+  background:linear-gradient(135deg,#00b4ff,#00ffe7);
+  color:#002233;
+  font-weight:700;
+  cursor:pointer;
+  transition:.25s;
+}
+
+button:hover{
+  transform:scale(1.03);
+}
+
+/* ===== MESSAGE ===== */
+#msg{
+  text-align:center;
+  margin-top:10px;
+  font-weight:600;
+}
+
+/* ===== KEY STATUS / COUNTDOWN ===== */
+.key-status{
+  text-align:center;
+  margin-bottom:16px;
+  padding:12px;
+  border-radius:14px;
+  background:rgba(0,200,255,.15);
+  border:1px dashed rgba(0,200,255,.6);
+  color:#7dd7ff;
+  font-weight:700;
+  box-shadow:0 0 15px rgba(0,200,255,.25);
+}
+
+/* ===== LINK BOX ===== */
+.link-box{
+  background:rgba(0,20,40,.6);
+  border:1px solid rgba(0,200,255,.3);
+  border-radius:16px;
+  padding:14px;
+  margin-bottom:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:10px;
+}
+
+.link-box span{
+  font-size:14px;
+}
+
+.link-box a{
+  text-decoration:none;
+  padding:8px 14px;
+  border-radius:12px;
+  background:#00f5ff;
+  color:#002233;
+  font-weight:700;
+  white-space:nowrap;
+}
+
+/* ===== WHATSAPP ===== */
+.wa-btn{
+  position:fixed;
+  bottom:18px;
+  right:18px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:#25D366;
+  padding:10px 14px;
+  border-radius:999px;
+  color:white;
+  text-decoration:none;
+  z-index:5;
+  box-shadow:0 0 20px rgba(37,211,102,.6);
+}
+
+.wa-btn img{
+  width:32px;
+  height:32px;
+}
+
+/* ===== FULL LOADING ===== */
+#loadingScreen{
+  position:fixed;
+  inset:0;
+  background:#02040f;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  z-index:999;
+}
+
+/* INI FIX UTAMA */
+#loadingScreen.loading-hide{
+  display:none !important;
+}
+
+.loader{
+  width:60px;
+  height:60px;
+  border:6px solid rgba(0,255,255,.2);
+  border-top:6px solid #00f5ff;
+  border-radius:50%;
+  animation:spin 1s linear infinite;
+  margin-bottom:20px;
+}
+
+@keyframes spin{
+  to{transform:rotate(360deg)}
+}
